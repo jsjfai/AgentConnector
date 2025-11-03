@@ -274,9 +274,9 @@ $ pnpm run build:linux:arm64
 
 AgentConnector is an active open-source community project, and we welcome various forms of contribution:
 
-- 🐛 Report issues: [AgentDNS](https://github.com/jsjfai/AgentDNS/issues), [AgentDNS-Node](https://github.com/jsjfai/AgentDNS-Node/issues), [AgentDNS-Client](https://github.com/jsjfai/AgentDNS-client/issues),[AgentDNS-CLI-Client](https://github.com/jsjfai/AgentDNS-CLI-client)
-- 💡 Submit feature suggestions: [AgentDNS](https://github.com/jsjfai/AgentDNS/issues), [AgentDNS-Node](https://github.com/jsjfai/AgentDNS-Node/issues), [AgentDNS-Client](https://github.com/jsjfai/AgentDNS-client/issues), [AgentDNS-CLI-Client](https://github.com/jsjfai/AgentDNS-CLI-client/issues),
-- 🔧 Submit code improvements: [AgentDNS](https://github.com/jsjfai/AgentDNS/pulls), [AgentDNS-Node](https://github.com/jsjfai/AgentDNS-Node/pulls), [AgentDNS-Client](https://github.com/jsjfai/AgentDNS-client/pulls), [AgentDNS-CLI-Client](https://github.com/jsjfai/AgentDNS-CLI-client/pulls)
+- 🐛 Report issues: [AgentDNS](https://github.com/jsjfai/AgentDNS/issues)
+- 💡 Submit feature suggestions: [AgentDNS](https://github.com/jsjfai/AgentDNS/issues)
+- 🔧 Submit code improvements: [AgentDNS](https://github.com/jsjfai/AgentDNS/pulls)
 
 ## 🙏🏻 Thanks
 
