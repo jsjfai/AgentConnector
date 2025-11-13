@@ -250,64 +250,9 @@ const DEFAULT_INMEMORY_SERVERS: Record<string, MCPServerConfig> = {
     type: 'sse',
     command: '',
     env: {},
-    baseUrl: 'https://aitest.jsjfsz.com:8300/agentdns/main/sse',
+    baseUrl: 'https://ai.jsjfsz.com:8302/agentdns/main/sse',
     disable: false
   },
-  // DNSNode: {
-  //   args: [],
-  //   descriptions: 'Internal usage only, do not remove',
-  //   icons: '🛠️',
-  //   autoApprove: ['all'],
-  //   type: 'http',
-  //   command: '',
-  //   env: {},
-  //   baseUrl: 'http://192.168.201.180:30003/mcp/$smart',
-  //   disable: false
-  // },
-  // 'DoesAI-inmemory/deep-research-server': {
-  //   args: [],
-  //   descriptions:
-  //     'DoesAIAgent内置深度研究服务，使用博查搜索(注意该服务需要较长的上下文模型，请勿在短上下文的模型中使用)',
-  //   icons: '🔬',
-  //   autoApprove: ['all'],
-  //   type: 'inmemory' as MCPServerType,
-  //   command: 'deepchat-inmemory/deep-research-server',
-  //   env: {
-  //     BOCHA_API_KEY: 'YOUR_BOCHA_API_KEY'
-  //   },
-  //   disable: false
-  // },
-  // 'DoesAIinmemory/auto-prompting-server': {
-  //   args: [],
-  //   descriptions: 'DoesAI内置自动模板提示词服务',
-  //   icons: '📜',
-  //   autoApprove: ['all'],
-  //   type: 'inmemory' as MCPServerType,
-  //   command: 'deepchat-inmemory/auto-prompting-server',
-  //   env: {},
-  //   disable: false
-  // },
-  // 'DoesAI-inmemory/conversation-search-server': {
-  //   args: [],
-  //   descriptions: 'DoesAI built-in conversation history search service',
-  //   icons: '🔍',
-  //   autoApprove: ['all'],
-  //   type: 'inmemory' as MCPServerType,
-  //   command: 'deepchat-inmemory/conversation-search-server',
-  //   env: {},
-  //   disable: false
-  // },
-  // 'DoesAI-inmemory/meeting-server': {
-  //   args: [],
-  //   descriptions: 'DoesAI内置会议服务，用于组织多Agent讨论',
-  //   icons: '👥',
-  //   autoApprove: ['all'],
-  //   type: 'inmemory' as MCPServerType,
-  //   command: 'deepchat-inmemory/meeting-server',
-  //   env: {},
-  //   disable: false
-  // },
-  // 合并平台特有服务
   ...PLATFORM_SPECIFIC_SERVERS
 }
 
@@ -330,6 +275,7 @@ const DEFAULT_MCP_SERVERS = {
   defaultServers: [
     //'Artifacts',
     'AgentDNS',
+    'mcp-harbor',
     //"buildInFileSystem",
     // "DNSNode"
     // 根据平台添加默认启用的平台特有服务
@@ -654,7 +600,7 @@ export class McpConfHelper {
     // 恢复默认服务器设置，确保平台特有服务的正确处理
     const platformAwareDefaultServers = [
       //'Artifacts',
-      'AIAgentDNS',
+      'AgentDNS',
       // 'DNSNode'
       // 根据平台添加默认启用的平台特有服务
       //...(isMacOS() ? ['deepchat/apple-server'] : [])
